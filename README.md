@@ -36,3 +36,10 @@ TypeError: (probably)
 ```
 
 As we can see it accurately interprets this 1k LOC python program.
+
+___
+
+## Previous Work
+
+- http://sigbovik.org/2022/proceedings.pdf - "Modernized Python", Daniel Ng, Page 8
+- https://github.com/exaloop/codon

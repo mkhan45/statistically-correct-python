@@ -15,4 +15,24 @@ if __name__ == '__main__':
 ```
 
 Note: fails on a vanishingly small proportion of Python programs, but so
-does CPython.
+does CPython. Alteratively, it has a slightly stricter type system than
+Python.
+
+Example:
+
+```py
+# input.py
+print("Hello") # line 1
+... (1000 lines)
+print(5 + "x") # line 1001
+```
+
+```
+> python3.10 main.py input.py
+Traceback (most recent call last):
+  File "...", line 1001, in <module>
+    raise TypeError("(probably)")
+TypeError: (probably)
+```
+
+As we can see it accurately interprets this 1k LOC python program.

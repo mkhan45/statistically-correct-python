@@ -15,7 +15,7 @@ if __name__ == '__main__':
 ```
 
 Note: fails on a vanishingly small proportion of Python programs, but so
-does CPython. Alteratively, it has a slightly stricter type system than
+does CPython. Alternatively, it has a slightly stricter type system than
 Python.
 
 Example:
